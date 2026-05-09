@@ -216,10 +216,7 @@ ArtStock-Manager/
 - Las migraciones de BD se hacen automáticamente con `sequelize.sync()`
 - Morgan registra todas las peticiones HTTP en desarrollo
 
-## 📄 Licencia
 
-ISC
 
-## 👤 Autor
 
-Desarrollado como proyecto académico para la asignatura de Implementación y Mantenimiento de Apps
+Implementación y Mantenimiento de Apps
