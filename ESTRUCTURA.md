@@ -107,7 +107,7 @@ CREATE TABLE productos (
 - Pre-rellena datos actuales
 - Mismos campos que crear.ejs
 
-## 🔐 Variables de Entorno (.env)
+## 🔐 Variables de Entorno  (.env)
 
 ```
 DB_HOST=mysql-host.aivencloud.com
