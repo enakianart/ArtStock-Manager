@@ -1,6 +1,6 @@
 # ArtStock Manager: Sistema de Gestión de Inventario 🎨
 
-### Es un proyecto llevado a cabo en parejas: Kianna Lorena Pascual Mejia y Yorka Alejandra Munchuli Batista de 6to A Informatica
+### Es un proyecto llevado a cabo en pareja: Kianna Lorena Pascual Mejia y Yorka Alejandra Munchuli Batista de 6to A Informatica.
 
 Sistema full-stack para el control de producción artística, inventario y análisis de ventas.
 

@@ -1,4 +1,4 @@
-# Estructura del Proyecto ArtStock Manager
+# Estructura completa del Proyecto ArtStock Manager
 
 ## 📁 Organización de Carpetas
 
