@@ -14,7 +14,7 @@ exports.obtenerProductos = async (req, res) => {
 // Mostrar formulario de creación
 exports.formularioCrear = (req, res) => {
     try {
-        res.render('crear');
+        res.render('crear', { error: null, values: {} });
     } catch (error) {
         console.error('Error al mostrar formulario:', error);
         res.status(500).send('Error al cargar formulario');
@@ -25,9 +25,17 @@ exports.formularioCrear = (req, res) => {
 exports.crearProducto = async (req, res) => {
     try {
         const { nombre, categoria, costo, precio, stock } = req.body;
-        
+
         if (!nombre || !categoria || !costo || !precio || !stock) {
             return res.status(400).send('Faltan campos requeridos');
+        }
+
+        const productoExistente = await Producto.findOne({ where: { nombre } });
+        if (productoExistente) {
+            return res.render('crear', {
+                error: 'Ya existe un producto con ese nombre. Cambia el nombre o agrega un sufijo como #2.',
+                values: { nombre, categoria, costo, precio, stock }
+            });
         }
 
         await Producto.create({
